@@ -1,13 +1,127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+
+.header {
+  background-color: #1a1d26;
+  color: white;
+  text-align: center;
+  margin-top: 0px !important;
+  margin-bottom: 0px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ullist {
+  display: flex;
+  flex-direction: row;
+  /* gap: 30px; */
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 4px;
+  justify-content: space-evenly;
+  /* align-items: center; */
+  height: auto;
+
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+.click {
+  cursor: pointer;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.text {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.text1 {
+  font-family: "Roboto";
+  font-size: 33px;
+  font-weight: 400;
+}
+
+
+.option-container {
+  text-align: center;
+  background-color: #EFF396;
+  height: 500px;
+  width: auto;
+}
+
+
+/* .no-underline {
+  text-decoration: none;
+  color: rgb(241, 240, 255);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav {
+  margin-top: 0px;
+  background-color: blue;
+} */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+
+
+
+.home-page {
+  padding: 20px;
+}
+
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px);
+  /* 25% width with 20px gap */
+  min-width: 250px;
+  /* Minimum width for the card */
+}
+
+.item-card h2 {
+  margin-top: 0;
+}
+
+.item-card p {
+  margin-bottom: 0;
 }
